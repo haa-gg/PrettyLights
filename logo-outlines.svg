@@ -5,14 +5,10 @@
 	width="100%" height="auto" viewBox="0 0 1619.918 1046.948" enable-background="new 0 0 1619.918 1046.948"
 	xml:space="preserve">
 
-	
-	<foreignObject class="full blend-lighten" mask="url(#mask1)">
-		<div xmlns="http://www.w3.org/1999/xhtml" class="full blend-lighten" mask="url(#mask1)">
-			<video src="Thin_Smoke.mp4"   mask="url(#mask1)"  autoplay="autoplay" muted="muted" preload="auto" loop="loop" class="full blend-lighten rotate"/>
-		</div>
-	</foreignObject>
 
 	<rect class="gradient-fill" width="100%" height="100%" mask="url(#mask1)"></rect>
+
+	<!-- Mask 1: bottom layer city -->
 
 	<mask id="mask1">
 
@@ -122,8 +118,17 @@
 														</mask>
 
 
-														<image xlink:href="smoke1.png" 
-															width="100%" height="100%"  mask="url(#mask1)"></image>
+														<!-- <image xlink:href="smoke1.png" 
+															width="100%" height="100%"  mask="url(#mask1)"></image> -->
+							
+
+																<!-- <image xlink:href="smoke-bg-animated.webp" 
+															width="100%" height="100%" class="blend-lighten" mask="url(#mask1)"></image> -->
+
+															<image xlink:href="smoke-bg-animated.webp" 
+															width="100%" height="100%" class="blend-lighten" mask="url(#mask2)"></image>
+
+
 															<defs>
 
 
@@ -189,7 +194,7 @@
 																}
 
 																svg{
-																background-color:#000;
+																background-color:#fff;
 																}
 
 																.rotate {
@@ -205,40 +210,53 @@
 																}
 
 																#stop1 {
-																animation: change-color1 5s ease-in-out infinite alternate;
+																animation: change-color1 10s ease-in-out infinite alternate;
 																}
 																#stop2 {
-																animation: change-color2 5s ease-in-out infinite alternate;
+																animation: change-color2 10s ease-in-out infinite alternate;
 																}
 																#stop3 {
-																animation: change-color3 5s ease-in-out infinite alternate;
+																animation: change-color3 10s ease-in-out infinite alternate;
 																}
 																@keyframes change-color1 {
 																0% {stop-color: #22ccff;}
-																20% {stop-color: #2a20f7;}
-																40% {stop-color: #6349ff;}
-																60% {stop-color: #e95fff;}
-																80% {stop-color: #ffb526;}
-																100% {stop-color: #ffe200}
+																10% {stop-color: #2a20f7;}
+																20% {stop-color: #6349ff;}
+																30% {stop-color: #e95fff;}
+																40% {stop-color: #ffb526;}
+																50% {stop-color: #ffe200;}
+																60% {stop-color: #ffb526;}
+																70% {stop-color: #e95fff;}
+																80% {stop-color: #6349ff;}
+																90% {stop-color: #2a20f7;}
+																100% {stop-color: #22ccff;}
 																}
 																@keyframes change-color2 {
-
 																0% {stop-color: #6349ff;}
-																20% {stop-color: #e95fff;}
+																10% {stop-color: #e95fff;}
+																20% {stop-color: #ffb526;}
+																30% {stop-color: #ffe200;}
 																40% {stop-color: #ffb526;}
-																60% {stop-color: #ffe200}
+																50% {stop-color: #e95fff;}
+																60% {stop-color: #6349ff;}
+																70% {stop-color: #2a20f7;}
 																80% {stop-color: #22ccff;}
+																90% {stop-color: #22ccff;}
 																100% {stop-color: #2a20f7;}
-
 																}
 
 																@keyframes change-color3 {
 																0% {stop-color: #ffb526;}
-																20% {stop-color: #ffe200}
-																40% {stop-color: #22ccff;}
-																60% {stop-color: #2a20f7;}
-																80% {stop-color: #6349ff;}
-																100% {stop-color: #e95fff;}
+																10% {stop-color: #ffe200;}
+																20% {stop-color: #ffb526;}
+																30% {stop-color: #e95fff;}
+																40% {stop-color: #6349ff;}
+																50% {stop-color: #2a20f7;}
+																60% {stop-color: #22ccff;}
+																70% {stop-color: #22ccff;}
+																80% {stop-color: #2a20f7;}
+																40% {stop-color: #6349ff;}
+																90% {stop-color: #e95fff;}
 																}
 
 															</style>
